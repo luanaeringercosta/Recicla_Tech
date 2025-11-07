@@ -5,36 +5,186 @@
 }
 
 header{
-    background-color:#b7c92e;
+    background-color:#ffffff;
     display: flex;
     // ativa as caixas flexiveis.
-    justify-content: flex-start; //é o padrão. os itens são postos no começo do eixo principal.
-    justify-content: flex-end; //os itens são postos no dfinal do eixo principal.
-    justify-content: center; //os itens são centralizados
+    //justify-content: flex-start; //é o padrão. os itens são postos no começo do eixo principal.
+    //justify-content: flex-end; //os itens são postos no dfinal do eixo principal.
+    //justify-content: center; //os itens são centralizados
     justify-content: space-around; //o espaço vazio antes do primeiro e do último são iguais aos espaços do meio.
     //justify-content: space-evenly; //o mesmo espaçamento entre os itens.
     //justify-content: space-between; //o primeiro item fica no começo do eixo e ultimo item fica no final do eixo.
-    height: 15vh;
+    height: 10vh;
     align-items: flex-start; // Os itens são postos no começo do eixo y (vertical).
     align-items: flex-end; //Os itens são postos no final do eixo vertical;
     align-items: center; //Os itens são alinhados no meio do eixo y.
 }
 
+div{
+    //border: solid;
+    display: flex;
+    justify-content: space-between;
+    width: 14%;
+    align-items: center;
+}
 
 h1{
-    border: solid red 5px;
+    //border: solid red 5px;
 }
 nav{
-    border: solid green;
+    //border: solid #ffffff;
     display: flex;
     justify-content: space-evenly;
     width: 40%;
     //pra espçar os itens, precisa de largura (width).
+    align-items: center;
     
 
 }
 a{
     text-decoration: none;
     font-size: 1.5rem;
-    color: red;
+    color: #4B5563;
+}
+
+.btnverdeheader{
+    background-color:#21C05C;
+    color:#ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.primeirasecction{
+    background-color: yellow;
+    height: 50vh;
+
+    section{
+        border:solid;
+        width: 55%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.produtosDisponiveis{
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+
+    article{
+        //border: solid red;
+        width: 30%;
+        height: 80%;
+        display: flex;
+        flex-direction: row; //padrão. Os itens sao organizados em fileiras (esquerda para direita)
+        //flex-direction: row-reverse; //Os itens são organizaados em forma de linha (fileira) da direita para a esquerda.
+        flex-direction: column; //os itens são organizados em coluna de cima para baixo
+        //flex-direction: colum-reverse; //os itens são organizados em formas de colunas iniciando de baixo para cima.
+
+        //justify-content: center;
+        //justify-content: space-around;
+        //justify-content: space-evenly;
+        justify-content: space-between;
+
+        align-items: center;
+
+    img{
+        width: 100%;
+        //border: solid;
+    }
+
+    button{
+        width: 45%;
+        height: 5vh;
+        margin-bottom: 1rem;
+        background-color: #16a34a;
+        color:#ffffff;
+        font-weight: 900;
+        border-radius: 15px;
+        font-size: 1rem;
+        cursor: pointer;
+
+    }
+
+    }
+
+     article{
+        border: solid red;
+        width: 30%;
+        height: 80%;
+        display: flex;
+        flex-direction: row; //padrão. Os itens sao organizados em fileiras (esquerda para direita)
+        //flex-direction: row-reverse; //Os itens são organizaados em forma de linha (fileira) da direita para a esquerda.
+        flex-direction: column; //os itens são organizados em coluna de cima para baixo
+        //flex-direction: colum-reverse; //os itens são organizados em formas de colunas iniciando de baixo para cima.
+
+        //justify-content: center;
+        //justify-content: space-around;
+        //justify-content: space-evenly;
+        justify-content: space-between;
+
+        align-items: center;
+
+    img{
+        width: 100%;
+        border: solid;
+    }
+
+    button{
+        width: 45%;
+        height: 5vh;
+        margin-bottom: 1rem;
+        background-color: #16a34a;
+        color:#ffffff;
+        font-weight: 900;
+        border-radius: 15px;
+        font-size: 1rem;
+        cursor: pointer;
+
+    }
+
+    }
+
+     article{
+        border: solid red;
+        width: 30%;
+        height: 80%;
+        display: flex;
+        flex-direction: row; //padrão. Os itens sao organizados em fileiras (esquerda para direita)
+        //flex-direction: row-reverse; //Os itens são organizaados em forma de linha (fileira) da direita para a esquerda.
+        flex-direction: column; //os itens são organizados em coluna de cima para baixo
+        //flex-direction: colum-reverse; //os itens são organizados em formas de colunas iniciando de baixo para cima.
+
+        //justify-content: center;
+        //justify-content: space-around;
+        //justify-content: space-evenly;
+        justify-content: space-between;
+
+        align-items: center;
+
+    img{
+        width: 100%;
+        border: solid;
+    }
+
+    button{
+        width: 45%;
+        height: 5vh;
+        margin-bottom: 1rem;
+        background-color: #16a34a;
+        color:#ffffff;
+        font-weight: 900;
+        border-radius: 15px;
+        font-size: 1rem;
+        cursor: pointer;
+
+    }
+
+    }
 }

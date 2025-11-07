@@ -5,31 +5,134 @@
 }
 
 header {
-  background-color: #b7c92e;
+  background-color: #ffffff;
   display: flex;
-  justify-content: flex-start;
-  justify-content: flex-end;
-  justify-content: center;
   justify-content: space-around;
-  height: 15vh;
+  height: 10vh;
   align-items: flex-start;
   align-items: flex-end;
   align-items: center;
 }
 
-h1 {
-  border: solid red 5px;
+div {
+  display: flex;
+  justify-content: space-between;
+  width: 14%;
+  align-items: center;
 }
 
 nav {
-  border: solid green;
   display: flex;
   justify-content: space-evenly;
   width: 40%;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: red;
+  color: #4B5563;
+}
+
+.btnverdeheader {
+  background-color: #21C05C;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.primeirasecction {
+  background-color: yellow;
+  height: 50vh;
+}
+.primeirasecction section {
+  border: solid;
+  width: 55%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.produtosDisponiveis {
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+.produtosDisponiveis article {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.produtosDisponiveis article img {
+  width: 100%;
+}
+.produtosDisponiveis article button {
+  width: 45%;
+  height: 5vh;
+  margin-bottom: 1rem;
+  background-color: #16a34a;
+  color: #ffffff;
+  font-weight: 900;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.produtosDisponiveis article {
+  border: solid red;
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.produtosDisponiveis article img {
+  width: 100%;
+  border: solid;
+}
+.produtosDisponiveis article button {
+  width: 45%;
+  height: 5vh;
+  margin-bottom: 1rem;
+  background-color: #16a34a;
+  color: #ffffff;
+  font-weight: 900;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.produtosDisponiveis article {
+  border: solid red;
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.produtosDisponiveis article img {
+  width: 100%;
+  border: solid;
+}
+.produtosDisponiveis article button {
+  width: 45%;
+  height: 5vh;
+  margin-bottom: 1rem;
+  background-color: #16a34a;
+  color: #ffffff;
+  font-weight: 900;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

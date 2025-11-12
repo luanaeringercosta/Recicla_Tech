@@ -14,11 +14,16 @@ header {
   align-items: center;
 }
 
-div {
+.caixalogo {
   display: flex;
   justify-content: space-between;
   width: 14%;
   align-items: center;
+}
+
+h1 {
+  border: solid red;
+  width: 95%;
 }
 
 nav {
@@ -44,20 +49,46 @@ a {
 }
 
 .primeirasecction {
-  background-color: yellow;
+  border: solid red;
+  background-color: #ffffff;
   height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .primeirasecction section {
-  border: solid;
+  border: solid green;
   width: 55%;
   height: 50vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+}
+.primeirasecction section h2 {
+  font-size: 3.75rem;
+  font-weight: 600;
+  width: 70%;
+  border: solid red;
+}
+.primeirasecction section p {
+  font-size: 1.25rem;
+  width: 70%;
+  border: solid blue;
+}
+
+.boxBntsPrimeiraSection {
+  border: solid purple;
+  width: 50%;
+  display: flex;
   justify-content: space-around;
+}
+.boxBntsPrimeiraSection button {
+  cursor: pointer;
+  padding: 20px 30px;
 }
 
 .produtosDisponiveis {
-  background-color: burlywood;
+  background-color: #F3F5F8;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -135,4 +166,64 @@ a {
   border-radius: 15px;
   font-size: 1rem;
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+  }
+  .caixalogo {
+    border: solid;
+    width: 70%;
+  }
+  nav {
+    border: solid;
+    width: 100%;
+  }
+  nav a {
+    font-size: 0.8rem;
+  }
+  nav .btnverdeheader {
+    font-size: 0.8rem;
+  }
+  .primeirasecction {
+    background-color: violet;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 90vh;
+  }
+  .primeirasecction section {
+    height: 50vh;
+    background-color: #16a34a;
+  }
+  .primeirasecction section h2 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .primeirasecction section p {
+    width: 100%;
+  }
+  .primeirasecction .boxBntsPrimeiraSection {
+    width: 100%;
+  }
+  .primeirasecction .boxBntsPrimeiraSection button {
+    padding: 20px 30px;
+  }
+  .produtosDisponiveis {
+    flex-direction: column;
+    background-color: pink;
+    height: 140vh;
+  }
+  .produtosDisponiveis article {
+    width: 60%;
+    text-align: center;
+  }
+  .produtosDisponiveis article button {
+    font-size: 1rem;
+    width: 70%;
+    font-weight: 300;
+  }
 }/*# sourceMappingURL=style.css.map */

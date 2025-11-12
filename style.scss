@@ -20,7 +20,7 @@ header{
     align-items: center; //Os itens são alinhados no meio do eixo y.
 }
 
-div{
+.caixalogo{
     //border: solid;
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,8 @@ div{
 }
 
 h1{
-    //border: solid red 5px;
+    border: solid red;
+    width: 95%;
 }
 nav{
     //border: solid #ffffff;
@@ -57,21 +58,52 @@ a{
 }
 
 .primeirasecction{
-    background-color: yellow;
+    border: solid red;
+    background-color: #ffffff;
     height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
     section{
-        border:solid;
+        border:solid green;
         width: 55%;
         height: 50vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
+
+        h2{
+            font-size: 3.75rem;
+            font-weight: 600;
+            width: 70%;
+            border: solid red;
+        }
+
+        p{
+            font-size: 1.25rem;
+            width: 70%;
+            border: solid blue;
+        }
     }
 }
 
+.boxBntsPrimeiraSection{
+    border: solid purple;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+
+    button{
+        cursor: pointer;
+        padding: 20px 30px;
+        
+    }
+
+}
+
 .produtosDisponiveis{
-    background-color: burlywood;
+    background-color: #F3F5F8;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -187,4 +219,107 @@ a{
     }
 
     }
+}
+
+
+
+//Responsivo
+//Smarphone max: 500px
+
+//Estrutura com limitador, minimo de pxe max de px
+//@media(min-width: ;) and (max-width: ;) {
+
+//}
+
+
+//Quero que você aplique esse estilo em telas de 0px até 500px
+
+@media(max-width: 500px){
+
+    header{
+        display:flex; //não faz diferença aqui pq já tem lá em cima, mas vou deixar
+        flex-direction: column;
+        height: 20vh;
+
+    }
+
+    .caixalogo{
+        border: solid;
+        width: 70%;
+    }
+    nav{
+        border: solid;
+        width:100%;
+
+        a{
+            font-size: 0.8rem;
+        }
+
+        .btnverdeheader{
+            font-size: 0.8rem;
+        }
+    }
+
+    // --------primeira section-----
+
+    .primeirasecction{
+        background-color: violet;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 90vh;
+
+        section{
+
+            height: 50vh;
+            background-color: #16a34a;
+            h2{
+                font-size: 1.5rem;
+                width: 100%;
+
+            }
+
+            p{
+                width: 100%;
+
+            }
+        }
+
+        .boxBntsPrimeiraSection{
+            width: 100%;
+
+            button{
+                padding: 20px 30px;
+            }
+
+            img {
+
+                width: 50%;
+        }
+
+    }
+
+
+
+    //section produtos disponiveis
+
+    .produtosDisponiveis{
+        flex-direction: column;
+        background-color: pink;
+        height: 140vh;
+
+    
+
+    article{
+        width: 60%;
+        text-align: center;
+
+ 
+        button{
+            font-size: 1rem;
+            width: 70%;
+            font-weight: 300;
+        }
+    }
+}
 }

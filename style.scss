@@ -102,6 +102,29 @@ a{
 
 }
 
+.dadosnumericos{
+background-color: #F3F5F8;
+display:flex;
+justify-content: space-around;
+text-align: center;
+align-items: center;
+height: 20vh;
+
+
+div{
+    border:solid;
+    width: 15%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+
+
+}
+}
+
 .produtosDisponiveis{
     background-color: #F3F5F8;
     display: flex;
@@ -298,6 +321,9 @@ a{
         }
 
     }
+}
+
+    // 
 
 
 
